@@ -23,6 +23,7 @@ requirements:
     - {{ compiler('c') }}
     - ninja
     - cmake
+    - m2-patch
 
 test:
   commands:
@@ -36,8 +37,12 @@ about:
   license_file:
     - bison/src/COPYING
     - flex/src/COPYING
+  dev_url: https://github.com/lexxmark/winflexbison
+  doc_url: https://www.gnu.org/software/bison/manual/
   summary: |
     WinFlexBison is a Windows port of Flex (the fast lexical analyser) and GNU Bison (parser generator).
+  description: |
+    WinFlexBison is a Windows port of Flex (the fast lexical analyser) and GNU Bison (parser generator). Both win_flex and win_bison are based on upstream sources but depend on system libraries only.
 
 extra:
   recipe-maintainers:
